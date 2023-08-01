@@ -1,2 +1,2 @@
 # Calculator-odin
-Calculator project from The Odin Project
+Calculator app exercise from The Odin Project.
