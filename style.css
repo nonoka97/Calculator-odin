@@ -1,0 +1,93 @@
+  
+  .page-container {
+    display: flex;
+    justify-content: center; /* Horizontally align the calc-container in the center of the page */
+    align-items: center; /* Vertically align the calc-container in the center of the page */
+    height: 100vh; /* Set the height of the page-container to fill the viewport */
+  }
+
+  .calc-container {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 350px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: #cccccc; /* Grey background for the calculator container */
+    border-radius: 10px; /* Rounded edges for the calculator container */
+  }
+  
+  .clear-and-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .row:last-child {
+    margin-bottom: 0;
+  }
+  
+  .row > .num > button,
+  .row > .oper > button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black; /* Black border for all buttons */
+    background-color: #fff7e0;
+    border-radius: 6px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+  
+  .clear > button {
+    height: 40px;
+    width: 108px;
+    background-color: rgb(248, 167, 167);
+    border: 1px solid black; /* Black border for the clear button */
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .delete > button {
+    height: 40px;
+    width: 108px;
+    background-color: rgb(168, 168, 252);
+    border: 1px solid black; /* Black border for the delete button */
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .screen {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #f5f5f5; /* Very light grey background for the screens */
+    padding: 5px; /* Adding padding inside the screens */
+    border-radius: 6px; /* Rounded edges for the screens */
+    margin: 20px 10px; /* Adjust the margins to keep the screen inside the container */
+    font-family: "Courier New", monospace; /* Use Courier New font for the screen text */
+  }
+  
+  /* Left-align the text inside the screens */
+  .operation-screen,
+  .result-screen {
+    text-align: right;
+  }
+  
+  /* Adding some padding and margin to improve spacing */
+  .calc-container > * {
+    margin: 5px;
+    padding: 5px;
+  }
+  
